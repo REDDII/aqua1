@@ -18,4 +18,4 @@ to this in your browser, and you can call your Go code from devtools.
 
 To build a redistributable, production mode package, use `wails build`.
 
-## v.001 feature2
+## v.001 feature1 v.03
