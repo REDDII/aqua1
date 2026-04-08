@@ -1,6 +1,7 @@
 package main
 
 import (
+	"aqua1/internal/helloworld"
 	"context"
 	"fmt"
 )
@@ -24,4 +25,9 @@ func (a *App) startup(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+// HelloWorld delegates message handling to the dedicated helloworld package.
+func (a *App) HelloWorld() string {
+	return helloworld.HelloWorld()
 }
